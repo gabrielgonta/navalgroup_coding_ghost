@@ -13,13 +13,14 @@ Ce projet est une application web React qui sert de tableau de bord pour visuali
 7. **Lecteur vidéo :** Permet d'afficher et de lire des vidéos'.
 
 ## Installation
-1. Accéder au répertoire du projet :
+1. Cloner le répertoire du projet :
 ```
+git clone git@github.com:gabrielgonta/navalgroup_coding_ghost.git
+```
+2. Accéder au répertoire du projet :
+```
+cd navalgroup_coding_ghost
 cd navalgroup
-```
-2. Installer les dépendances :
-```
-npm install
 ```
 3. Démarrer votre serveur de développement :
 ```
