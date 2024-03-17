@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'B612'; /* Nom de la police */
+  src: url('../public/B612/B612-Regular.ttf') format('truetype'); /* Chemin vers le fichier de police */
+  /* Vous pouvez également spécifier différents formats de police pour une compatibilité maximale */
+}
+
+.videos {
+  position: relative;
+  padding: 1%;
+  background: rgb(238, 238, 238);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5%;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  margin: 0.5%;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .zoomable-video {
+    transform-origin: top left;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup video {
+    width: 100%;
+  }
+  
+  .popup button:not(.zoom-in, .zoom-out) {
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: black;
+    font-family: B612;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }  
+  
+  .videos video::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-play-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-overlay-play-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-timeline {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-current-time-display {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-mute-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-volume-slider {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-rewind-button {
+    display: none !important;
+  }
+  
+  .videos video::-webkit-media-controls-fast-forward-button {
+    display: none !important;
+  }
+
+  .video-grid {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espacement entre les vidéos */
+  }
+  
+  .video-container {
+    width: 100%;
+    border-radius: 3%;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+  }
+  
+  .zoomable-video {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .zoomable-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .zoom-buttons button {
+    margin-right: 10px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-controls button {
+  margin: 5px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-controls button {
+  margin: 5px;
+}
