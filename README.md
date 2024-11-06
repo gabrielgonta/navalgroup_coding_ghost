@@ -56,7 +56,7 @@ npm start
 
 ## Contributeurs
 - [Gabriel Gonta](https://github.com/gabrielgonta)
-- [Luis Fernandes](https://github.com/Luis06000)
+- [Luis Fernandes](https://github.com/Luis06000) 
 
 ## Licence
 Ce projet est sous licence [MIT License](LICENSE).
